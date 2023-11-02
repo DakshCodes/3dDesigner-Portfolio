@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+/*-----------------------------------*\
+    #PRELOADER
+  \*-----------------------------------*/
+
+  .loader {
+    position: absolute;
+    z-index: 9999999999;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box {
+    /* background: #000; */
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+.loader-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+
+@media (max-width :800px) {
+    .loader-text h2{
+        font-family: 'Major Mono Display', monospace;
+        margin-top: 10rem;
+        color: #fff;
+        font-size: 2rem;
+        width: max-content;
+    } 
+    
+}
+.loader-text h2{
+    font-family: 'Major Mono Display', monospace;
+    margin-top: 10rem;
+    color: #fff;
+    font-size: 6rem;
+    width: max-content;
+} 
+
+.loader-text img{
+    height: 25rem;
+}
+.overlay-loader {
+    width: 100%;
+    height: 100vh;
+}
+
+.block {
+    position: fixed;
+    width: 1%;
+    height: 100vh;
+    background: #fff;
+}
+
+.block-1 {
+    left: 0;
+}
+
+.block-2 {
+    left: 5%;
+}
+
+.block-3 {
+    left: 10%;
+}
+
+.block-4 {
+    left: 15%;
+}
+
+.block-5 {
+    left: 20%;
+}
+
+.block-6 {
+    left: 25%;
+}
+
+.block-7 {
+    left: 30%;
+}
+
+.block-8 {
+    left: 35%;
+}
+
+.block-9 {
+    left: 40%;
+}
+
+.block-10 {
+    left: 45%;
+}
+
+.block-11 {
+    left: 50%;
+}
+
+.block-12 {
+    left: 55%;
+}
+
+.block-13 {
+    left: 60%;
+}
+
+.block-14 {
+    left: 65%;
+}
+
+.block-15 {
+    left: 70%;
+}
+
+.block-16 {
+    left: 75%;
+}
+
+.block-17 {
+    left: 80%;
+}
+
+.block-18 {
+    left: 85%;
+}
+
+.block-19 {
+    left: 90%;
+}
+
+.block-20 {
+    left: 95%;
+}

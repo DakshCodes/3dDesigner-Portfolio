@@ -1,0 +1,165 @@
+.contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    position: relative;
+}
+
+.contact .body {
+    padding-top: 100px;
+    width: 100%;
+    max-width: 1800px;
+    background-color: #000;
+}
+
+.contact .body .title {
+    border-bottom: 1px solid #868686;
+    margin-left: 200px;
+    margin-right: 200px;
+    position: relative;
+    margin-bottom: 8rem;
+    font-weight: 900;
+}
+
+.contact .body .title span {
+    display: flex;
+    align-items: center;
+}
+
+.contact .body .title span .imageContainer {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.contact .body .title span .imageContainer img {
+    object-fit: cover;
+}
+
+.contact .body .title span h2 {
+    margin-left: 0.3em;
+}
+
+.contact .body .title h2 {
+    font-size: 5vw;
+    margin: 0px;
+    font-weight: 300;
+}
+
+.contact .body .title .buttonContainer {
+    position: absolute;
+    left: calc(100% - 400px);
+    top: calc(100% - 75px);
+}
+
+.contact .body .title .button {
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.contact .body .title .button p {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 300;
+    z-index: 2;
+    position: relative;
+}
+
+.contact .body .title svg {
+    position: absolute;
+    top: 30%;
+    left: 100%;
+}
+
+.contact .body .nav {
+    display: flex;
+    gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.contact .body .nav .roundedButton-1 {
+    border-radius: 3em;
+    border: 1px solid rgb(136, 136, 136);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 60px 20px 60px;
+    height: 100px;
+    width: 270px;
+    margin: 0 auto;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+
+.contact .body .nav .roundedButton-1:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.contact .body .nav p {
+    font-size: 15px;
+}
+
+.contact .body .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    padding: 20px;
+}
+
+.contact .body .info div {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.contact .body .info div p,
+.contact .body .info div h3 {
+    margin: 0px;
+    padding: 2.5px;
+    cursor: pointer;
+}
+
+.contact .body .info div p::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin-top: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s linear;
+}
+
+.contact .body .info div p:hover::after {
+    width: 100%;
+}
+
+.contact .body .info div span {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact .body .info div h3 {
+    color: grey;
+    cursor: default;
+    font-weight: 300;
+    font-size: 1em;
+}

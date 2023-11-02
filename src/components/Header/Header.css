@@ -1,0 +1,153 @@
+/*-----------------------------------*\
+    #HEADER
+  \*-----------------------------------*/
+
+.logo {
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+}
+
+.logo img {
+    height: 100px;
+    width: 200px;
+    object-fit: contain;
+}
+
+
+.header {
+    font-family: 'Syne', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 10;
+    transition: var(--transition-1);
+}
+
+.header.active {
+    background-color: var(--raisin-black);
+    padding-block: 16px;
+}
+
+.header .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+@media (max-width :800px) {
+
+    .logo {
+        color: #fff;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+    
+    }
+
+    .header .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0px;
+    }
+
+}
+
+.nav-toggle-btn {
+    margin-left: 10rem;
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-circle);
+    display: grid;
+    place-content: center;
+    gap: 8px;
+    transition: var(--transition-1);
+    z-index: 2;
+}
+
+
+.nav-toggle-btn:hover .line-1 {
+    transform: translateY(2px);
+}
+
+.nav-toggle-btn:hover .line-2 {
+    transform: translateY(-2px);
+}
+
+.nav-toggle-btn.active {
+    gap: 8px;
+}
+
+.nav-toggle-btn .line {
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    transition: var(--transition-1);
+}
+
+.nav-toggle-btn.active .line-1 {
+    transform: rotate(45deg) translate(4px, 4px);
+}
+
+.nav-toggle-btn.active .line-2 {
+    transform: rotate(-45deg) translate(3px, -2px);
+}
+
+.navbar {
+    position: absolute;
+    top: 0%;
+    right: -370px;
+    max-width: 390px;
+    width: 100%;
+    /* background-color: #000; */
+    background-image: url(https://i.pinimg.com/736x/07/13/78/071378ebdea1a5b2427154cdba021bea.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding: 200px 40px;
+    visibility: hidden;
+    transition: 0.25s var(--cubic-in);
+    z-index: 1;
+    border-radius: 60px 0px 0px 60px;
+}
+
+.navbar.active {
+    transform: translateX(-370px);
+    visibility: visible;
+    transition-timing-function: var(--cubic-out);
+}
+
+.navbar-link {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-block: 20px;
+    transition: var(--transition-1);
+}
+
+
+.overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
