@@ -3,6 +3,7 @@ import './Header.css'
 import logo from '../../assets/logo.png'
 import gsap from 'gsap';
 import Magnetic from '../../common/Magnetic';
+import { Link } from 'react-router-dom';
 
 const addEventOnElements = (elements, eventType, callback) => {
     elements.forEach((element) => {
@@ -31,46 +32,35 @@ const Header = () => {
         <>
             <header className="header" data-header>
                 <div className="container">
-                    <a href="#" className="logo">
-                        <img src={logo} width={170} height={40} alt="Pfolio home" />
-                    </a>
+                    <Link to={'/'}>
+                        <a href="#" className="logo">
+                            <img src={logo} width={170} height={40} alt="Pfolio home" />
+                        </a>
+                    </Link>
                     <button className="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
                         <span className="line line-1" />
                         <span className="line line-2" />
                     </button>
                     <nav className="navbar" data-navbar>
                         <ul className="navbar-list">
-                            <Magnetic>
-                                <li>
+
+                            <Link to={'/'}>
+                                <li data-nav-toggler>
                                     <a href="#" className="navbar-link">Home</a>
                                 </li>
-                            </Magnetic>
+                            </Link>
 
-                            <Magnetic>
-                                <li>
-                                    <a href="#" className="navbar-link">Resume</a>
-                                </li>
-                            </Magnetic>
-                            <Magnetic>
-                                <li>
-                                    <a href="#" className="navbar-link">Services</a>
-                                </li>
-                            </Magnetic>
-                            <Magnetic>
-                                <li>
+                            <Link to={'/works'}>
+                                <li data-nav-toggler>
                                     <a href="#" className="navbar-link">Portfolio</a>
                                 </li>
-                            </Magnetic>
-                            <Magnetic>
-                                <li>
-                                    <a href="#" className="navbar-link">Blog</a>
-                                </li>
-                            </Magnetic>
-                            <Magnetic>
-                                <li>
+                            </Link>
+                            <Link to={'/conatct'}>
+                                <li data-nav-toggler>
                                     <a href="#" className="navbar-link">Contact</a>
                                 </li>
-                            </Magnetic>
+                            </Link>
+
                         </ul>
                     </nav>
                     <div className="overlay" data-nav-toggler data-overlay />

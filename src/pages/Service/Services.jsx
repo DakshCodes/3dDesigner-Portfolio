@@ -80,6 +80,19 @@ const Home = () => {
     setModal({ active, index });
   };
 
+  useEffect(() => {
+    gsap.to('.section-title__square', {
+      rotate: 730,
+      scrollTrigger: {
+        trigger: 'content',
+        start: '-10% 0%',
+        end: '100% 0%',
+        scrub: 1.9,
+      }
+    })
+  }, [])
+
+
   return (
     <main onMouseMove={(e) => { moveItems(e.clientX, e.clientY); }} className='projects'>
       <h2 class="section-title">servic<span class="stroke">es</span>

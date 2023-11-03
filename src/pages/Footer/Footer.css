@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
+
+@font-face {
+    font-family: gridul;
+    src: url(/src/assets/gridul.woff2);
+}
+
+
 .contact {
     color: white;
     display: flex;
@@ -6,6 +14,8 @@
     justify-content: center;
     background-color: #000;
     position: relative;
+    height: 100vh;
+    font-family: gridul;
 }
 
 .contact .body {
@@ -22,6 +32,8 @@
     position: relative;
     margin-bottom: 8rem;
     font-weight: 900;
+    font-family: 'Syne', sans-serif;
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .contact .body .title span {
@@ -58,6 +70,7 @@
 }
 
 .contact .body .title .button {
+    font-family: gridul;
     width: 150px;
     height: 150px;
     background-color: #000;
@@ -71,8 +84,8 @@
 
 .contact .body .title .button p {
     margin: 0px;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 10px;
+    font-weight: 100;
     z-index: 2;
     position: relative;
 }
@@ -105,7 +118,7 @@
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
 }
 
-.contact .body .nav .roundedButton-1:hover{
+.contact .body .nav .roundedButton-1:hover {
     background-color: red;
     color: #fff;
 }
@@ -162,4 +175,8 @@
     cursor: default;
     font-weight: 300;
     font-size: 1em;
+}
+
+.valuexlabs {
+    font-family: gridul;
 }

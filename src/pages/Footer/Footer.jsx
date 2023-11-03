@@ -40,21 +40,21 @@ export default function Footer() {
                 </div>
                 <div className="nav">
                         <div className='roundedButton-1'>
-                            <p>info@dennissnellenberg.com</p>
+                            <p>info@ankit.com</p>
                         </div>
                         <div className='roundedButton-1'>
-                            <p>+31 6 27 84 74 30</p>
+                            <p>+31 xxx 80 xx</p>
                         </div>
                 </div>
                 <div className="info">
                     <div>
                         <span>
                             <h3>Version</h3>
-                            <p>2022 © Edition</p>
+                            <p>2023 © Edition</p>
                         </span>
                         <span>
-                            <h3>Version</h3>
-                            <p>11:49 PM GMT+2</p>
+                            <h3>Production</h3>
+                            <p className='valuexlabs'>ValueXLabs</p>
                         </span>
                     </div>
                     <div>

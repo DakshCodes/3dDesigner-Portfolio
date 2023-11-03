@@ -6,11 +6,14 @@ import LoaderAnimation from './components/Loader/animation';
 import Services from './pages/Service/Services';
 import Featured from './pages/Featured/Featured';
 import Footer from './pages/Footer/Footer';
+import { Routes, Route, useNavigate } from "react-router-dom"
+import Works from './pages/Portfolios/Works';
 
 
 
 function App() {
 
+  const navigate = useNavigate()
 
 
 
@@ -25,7 +28,9 @@ function App() {
           window.scrollTo(0, 0);
         }, 2000)
       }
+
     )()
+    // navigate('/')
   }, [])
 
   return (
@@ -35,11 +40,20 @@ function App() {
           LoaderAnimation()
         }
       </AnimatePresence>
-      
       <Header />
-      <Landing />
-      <Services />
-      <Featured />
+      <Routes>
+        {/* Landing */}
+        <Route path='/' element={
+          <>
+            <Landing />
+            <Services />
+            <Featured />
+          </>
+        } />
+
+        {/* Work */}
+        <Route path='/works' element={<Works />} />
+      </Routes>
       <Footer />
     </>
   )
