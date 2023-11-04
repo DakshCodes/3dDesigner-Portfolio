@@ -7,22 +7,22 @@ import './Services.css';
 const projects = [
   {
     title: "3d Modeling",
-    src: "",
+    src: "https://i.pinimg.com/564x/da/49/32/da493289f89d2383b324bbf1608590df.jpg",
     color: "#000000"
   },
   {
     title: "Animations",
-    src: "officestudio.png",
+    src: "https://i.pinimg.com/originals/6c/44/60/6c4460dff365e2c4eea5ae323265c70f.gif",
     color: "#8C8C8C"
   },
   {
     title: "Video Editing",
-    src: "locomotive.png",
+    src: "https://i.pinimg.com/originals/e1/58/83/e158838ac07449d2dee9621f92a2a976.gif",
     color: "#EFE8D3"
   },
   {
     title: "Graphic Designing",
-    src: "silencio.png",
+    src: "https://i.pinimg.com/564x/2a/bb/e8/2abbe8129d0626c377c9243845f20c6d.jpg",
     color: "#706D63"
   }
 ];
@@ -113,7 +113,7 @@ const Home = () => {
                 const { src, color } = project;
                 return (
                   <div className="modal" style={{ backgroundColor: color }} key={`modal_${index}`}>
-                    <img src={`/images/${src}`} width={300} alt="image" />
+                    <img src={src} width={300} alt="image" />
                   </div>
                 );
               })

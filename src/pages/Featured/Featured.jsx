@@ -11,6 +11,7 @@ import img6 from '../../assets/img10.jpg'
 import img7 from '../../assets/img9.jpeg'
 import img8 from '../../assets/img8.jpeg'
 import img9 from '../../assets/img9.jpeg'
+import gsap from 'gsap';
 
 
 const slider1 = [
@@ -63,6 +64,18 @@ const Featured = () => {
     const x2 = useTransform(scrollYProgress, [0, 1], [0, -200])
     const height = useTransform(scrollYProgress, [0, 0.9], [200, 0])
 
+    useEffect(() => {
+        gsap.to('.featured-title__square', {
+          rotate: 730,
+          scrollTrigger: {
+            trigger: 'content',
+            start: '-10% 0%',
+            end: '100% 0%',
+            scrub: 1.9,
+          }
+        })
+      }, [])
+    
 
     return (
         <div ref={container} className="slidingImages">

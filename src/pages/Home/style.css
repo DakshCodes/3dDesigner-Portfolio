@@ -10,6 +10,10 @@
   \*-----------------------------------*/
 
 .hero {
+    background-color: #000;
+    /* background-image: url(https://i.pinimg.com/564x/4f/9c/2b/4f9c2bc28fdd0bb4617833e8dc35784e.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: c; */
     position: relative;
     padding-block-start: 130px;
     height: 100vh;
@@ -29,10 +33,16 @@
 .hero-imges img {
     width: 100%;
     height: 100%;
+
 }
 
 .hero-imges {
-    z-index: 5;
+    -webkit-box-shadow: 0px 0px 300px 0px red;
+    -moz-box-shadow: 0px 0px 300px 0px red;
+    box-shadow: 0px 0px 300px 0px red;
+    z-index: 3;
+    border-radius: 100%;
+    background-color: #000;
     /* animation: img 0.0001s alternate infinite; */
     /* mix-blend-mode: screen; */
 }
@@ -49,21 +59,27 @@
 
 .hero-title {
     position: absolute;
-    top: 80%;
-    left: 10%;
-    transform: translate(-10%, -80%) !important;
+    top: 70%;
+    left: 5%;
+    transform: translate(-5%, -70%) !important;
     text-transform: uppercase;
-    font-size: 10vw;
+    font-size: 7vw;
     color: var(--white);
     width: max-content;
     font-style: italic;
     font-weight: 900;
     letter-spacing: -8px !important;
-    z-index: 2;
+    z-index: 7;
 }
 
 #d {
     font-family: gridul;
+    letter-spacing: 5px;
+    font-size: 9vw;
+}
+
+#studio {
+    color: red;
 }
 
 .hero-title2 {
@@ -71,7 +87,7 @@
     top: 95%;
     left: 10%;
     transform: translate(-10%, -95%) !important;
-    z-index: 2;
+    z-index: 13;
     text-transform: initial;
     font-size: 8vw !important;
     color: var(--white);
@@ -82,15 +98,15 @@
 
 .hero-banner {
     position: absolute;
-    left: -20%;
-    top: 30%;
-    transform: rotate(-60deg) translate(20%, -30%);
+    left: -10%;
+    top: 40%;
+    transform: rotate(-60deg) translate(10%, -30%);
     border-radius: var(--blob-radius);
     background-color: red;
     height: 800px;
     width: 600px;
     /* opacity: 0.2; */
-    animation: blobAnim 20s linear infinite;
+    animation: blobAnim 10s alternate infinite;
 }
 
 .btn-video svg {

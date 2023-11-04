@@ -1,8 +1,8 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import video from '../../assets/1552295514.mp4';
-import hero from '../../assets/pic-3.png';
+// import hero from '../../assets/pic-3.png';
 // import hero from '../../assets/pic-2.png';
-// import hero from '../../assets/pic-1.png';
+import hero from '../../assets/pic-1.png';
 import animateHome from './animations';
 import './style.css';
 
@@ -64,8 +64,8 @@ const Landing = () => {
                     <div className="hero-content">
                         <div className="hero-banner">
                         </div>
-                        <h1 className="h1 hero-title">itx <span id='d'>3d</span> studio</h1>
-                        <h1 className="h2 hero-title2">Ankit is</h1>
+                        <h1 className="h1 hero-title">itx <span id='d'>3d</span><span id='studio'> studio </span> </h1>
+                        <h1 className="h2 hero-title2">Ankit</h1>
                     </div>
                 </div>
             </section>
