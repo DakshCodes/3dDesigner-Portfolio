@@ -30,7 +30,7 @@ function App() {
       }
 
     )()
-    // navigate('/')
+    navigate('/')
   }, [])
 
   return (

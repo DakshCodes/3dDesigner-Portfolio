@@ -3,15 +3,16 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import './Featured.css'; // Import your CSS/SASS styles here
 import Rounded from '../../common/RoundedButton';
 import img1 from '../../assets/img1.jpeg'
-import img2 from '../../assets/img2.jpeg'
+import img2 from '../../assets/Wave.gif'
 import img3 from '../../assets/img3.jpeg'
-import img4 from '../../assets/img4.jpeg'
+import img4 from '../../assets/Wave.gif'
 import img5 from '../../assets/img5.jpeg'
-import img6 from '../../assets/img10.jpg'
+import img6 from '../../assets/Wave.gif'
 import img7 from '../../assets/img9.jpeg'
-import img8 from '../../assets/img8.jpeg'
+import img8 from '../../assets/Wave.gif'
 import img9 from '../../assets/img9.jpeg'
 import gsap from 'gsap';
+import { Link } from 'react-router-dom';
 
 
 const slider1 = [
@@ -21,16 +22,18 @@ const slider1 = [
     },
     {
         color: "#d6d7dc",
-        src: img2
+        src: img2,
+        id: "wave"
     },
     {
         color: "#e3e3e3",
         src: img3
     },
     {
-        color: "#21242b",
-        src: img4
-    }
+        color: "#d6d7dc",
+        src: img2,
+        id: "wave"
+    },
 ];
 
 const slider2 = [
@@ -40,15 +43,12 @@ const slider2 = [
     },
     {
         color: "#e5e0e1",
-        src: img6
+        src: img6,
+        id: "wave"
     },
     {
         color: "#d7d4cf",
-        src: img7
-    },
-    {
-        color: "#e1dad6",
-        src: img8
+        src: img7,
     }
 ];
 
@@ -66,16 +66,16 @@ const Featured = () => {
 
     useEffect(() => {
         gsap.to('.featured-title__square', {
-          rotate: 730,
-          scrollTrigger: {
-            trigger: 'content',
-            start: '-10% 0%',
-            end: '100% 0%',
-            scrub: 1.9,
-          }
+            rotate: 730,
+            scrollTrigger: {
+                trigger: 'content',
+                start: '-10% 0%',
+                end: '100% 0%',
+                scrub: 1.9,
+            }
         })
-      }, [])
-    
+    }, [])
+
 
     return (
         <div ref={container} className="slidingImages">
@@ -86,7 +86,7 @@ const Featured = () => {
                 {
                     slider1.map((project, index) => {
                         return <div key={index} className="project" style={{ backgroundColor: project.color }} >
-                            <div className="imageContainer">
+                            <div className="imageContainer" id={project.id}>
                                 <img
                                     fill={true}
                                     alt={"image"}
@@ -99,8 +99,8 @@ const Featured = () => {
             <motion.div style={{ x: x2 }} className="slider">
                 {
                     slider2.map((project, index) => {
-                        return <div key={index} className="project" style={{ backgroundColor: project.color }} >
-                            <div key={index} className="imageContainer">
+                        return <div key={index} className="project" id={project.id} style={{ backgroundColor: project.id === "wave" ? "#fff" : project.color }} >
+                            <div key={index} className="imageContainer" >
                                 <img
                                     fill={true}
                                     alt={"image"}
@@ -111,7 +111,9 @@ const Featured = () => {
                 }
             </motion.div>
             <Rounded>
-                <p>More work</p>
+                <Link to={"/works"}>
+                    <p>More work</p>
+                </Link>
             </Rounded>
             <motion.div style={{ height }} className="circleContainer">
                 <div className="circle"></div>

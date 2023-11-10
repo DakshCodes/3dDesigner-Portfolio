@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Works.css';
 import gsap from 'gsap';
 import { motion } from 'framer-motion';
@@ -7,6 +7,36 @@ import projectvideo from '../../assets/project-1.mp4'
 
 gsap.registerPlugin(ScrollTrigger); //
 
+
+
+const WorkItem = ({ videoSource, number, componentspeed, numberspeed }) => {
+    const videoRef = useRef(null);
+
+    const handleHover = () => {
+        videoRef.current.play();
+    };
+
+    const handleHoverOut = () => {
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+    };
+
+    return (
+        <motion.div
+            className="work__item"
+            data-speed={componentspeed}
+            onMouseEnter={handleHover}
+            onMouseLeave={handleHoverOut}
+        >
+            <motion.div className="work__item-img">
+                <motion.span className="work__item-num" data-speed={numberspeed}>/{number}</motion.span>
+                <motion.video loop muted preload="auto" ref={videoRef} id="project-video">
+                    <source src={videoSource} type="video/mp4" />
+                </motion.video>
+            </motion.div>
+        </motion.div>
+    );
+};
 
 const Works = () => {
     const workWrapper = useRef(null);
@@ -29,10 +59,12 @@ const Works = () => {
 
         // Add the event listener for scroll when the component mounts
         window.addEventListener('scroll', handleScroll);
+        // Scroll to the top when the component mounts
+        window.scrollTo(0, 0); // This line will scroll the window to the top
 
         // GSAP animations with ScrollTrigger
-        gsap.to('.work__item-img img', {
-            scale: 0.7,
+        gsap.to('.work__item-img #project-video', {
+            scale: 0.9,
             scrollTrigger: {
                 trigger: '.work__wrapp',
                 start: '-10% 0%',
@@ -68,78 +100,12 @@ const Works = () => {
             <div className="work__wrapp"
                 ref={workWrapper}
             >
-                <motion.div className="work__item" data-speed={100}>
-                    <motion.span className="work__item-num" data-speed={-500}>/001</motion.span>
-                    <motion.div className="work__item-img">
-                        <motion.img src="https://i.pinimg.com/564x/ce/3b/17/ce3b1704a8eba3af31f5f596d1613d8b.jpg" alt={3} />
-                        <video loop autoPlay muted preload="auto" id="project-video">
-                            <source src={projectvideo} type="video/mp4" />
-                        </video>
-                    </motion.div>
-                </motion.div>
-                <motion.div className="work__item" data-speed={-700}>
-                    <motion.span className="work__item-num" data-speed={-700}>/002</motion.span>
-                    <motion.div className="work__item-img">
-                        <motion.img src="https://i.pinimg.com/564x/a9/d5/68/a9d5686c6f7228b73bb83a959b4dd2cf.jpg" alt={4} />
-                        <video loop autoPlay muted preload="auto" id="project-video">
-                            <source src="https://v1.pinimg.com/videos/mc/720p/9b/5e/4f/9b5e4f2eb7175e906f24404f993d992e.mp4" type="video/mp4" />
-                        </video>
-                    </motion.div>
-                </motion.div>
-                <motion.div className="work__item" data-speed={-300}>
-                    <motion.span className="work__item-num" data-speed={-300}>/003</motion.span>
-                    <motion.div className="work__item-img">
-                        <motion.img src="https://i.pinimg.com/564x/db/6c/d5/db6cd52130a0ea3174195475f74e0a8e.jpg" alt={5} />
-                        <video loop autoPlay muted preload="auto" id="project-video">
-                            <source src="https://v1.pinimg.com/videos/mc/720p/17/a2/40/17a240d48d7b52a4f8554b602ad31e49.mp4" type="video/mp4" />
-                        </video>
-                    </motion.div>
-                </motion.div>
-                <motion.div className="work__item" data-speed={-400}>
-                    <motion.span className="work__item-num" data-speed={-300}>/004</motion.span>
-                    <motion.div className="work__item-img">
-                        <motion.img src="https://i.pinimg.com/564x/c6/15/0e/c6150e619639814a100c420f260f0289.jpg" alt={6} />
-                        <video loop autoPlay muted preload="auto" id="project-video">
-                            <source src="https://v1.pinimg.com/videos/mc/720p/94/e9/74/94e974bf64c1638b22922882ff070505.mp4" type="video/mp4" />
-                        </video>
-                    </motion.div>
-                </motion.div>
-                <motion.div className="work__item" data-speed={-400}>
-                    <motion.span className="work__item-num" data-speed={-100}>/005</motion.span>
-                    <motion.div className="work__item-img">
-                        <motion.img src="https://i.pinimg.com/564x/75/73/4d/75734dd8c497f868c6c4e879b9fe64e5.jpg" alt={6} />
-                        <video loop autoPlay muted preload="auto" id="project-video">
-                            <source src="https://v1.pinimg.com/videos/mc/720p/62/f7/1a/62f71a0f2186e17fd7d911a76f0984fd.mp4" type="video/mp4" />
-                        </video>
-                    </motion.div>
-                </motion.div>
-                <motion.div className="work__item" data-speed={-700}>
-                    <motion.span className="work__item-num" data-speed={-400}>/006</motion.span>
-                    <motion.div className="work__item-img">
-                        <motion.img src="https://i.pinimg.com/564x/b8/62/a4/b862a4061ceea0f9c1468f3154924563.jpg" alt={6} />
-                        <video loop autoPlay muted preload="auto" id="project-video">
-                            <source src="https://v1.pinimg.com/videos/mc/720p/17/a2/40/17a240d48d7b52a4f8554b602ad31e49.mp4" type="video/mp4" />
-                        </video>
-                    </motion.div>
-                </motion.div>
-                <motion.div className="work__item" data-speed={-600}>
-                    <motion.span className="work__item-num" data-speed={-300}>/007</motion.span>
-                    <motion.div className="work__item-img">
-                        <motion.img src="https://i.pinimg.com/564x/a7/d2/e8/a7d2e856e2fcac2f4c8488e46de3f3f9.jpg" alt={6} />
-                        <video loop autoPlay muted preload="auto" id="project-video">
-                            <source src={projectvideo} type="video/mp4" />
-                        </video>
-                    </motion.div>
-                </motion.div>
-                <motion.div className="work__item" data-speed={-800}>
-                    <motion.span className="work__item-num" data-speed={-100}>/008</motion.span>
-                    <motion.div className="work__item-img">
-                        <motion.img src="https://i.pinimg.com/736x/02/61/a5/0261a557399bc07c61d4ec0a2031b1da.jpg" alt={6} />
-                        <video loop autoPlay muted preload="auto" id="project-video">
-                            <source src="https://v1.pinimg.com/videos/mc/720p/17/a2/40/17a240d48d7b52a4f8554b602ad31e49.mp4" type="video/mp4" />
-                        </video>
-                    </motion.div>
-                </motion.div>
+                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/expMp4/11/57/38/1157385f7a7d8152cf14bbfb4fb093ec_t3.mp4" numberspeed={-400} componentspeed={400} number={"001"} />
+                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/expMp4/3f/b4/e4/3fb4e41e0e27e4146b87398cee8719c9_t3.mp4" numberspeed={-900} componentspeed={-400} number={"002"} />
+                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/720p/c1/32/0c/c1320cf3edba286632c6810b09ad3de5.mp4" numberspeed={-300} componentspeed={100} number={"003"} />
+                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/720p/95/92/71/959271eceee104db73c0930ab3a7135a.mp4" numberspeed={-250} componentspeed={-130} number={"004"} />
+                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/expMp4/e9/3c/1c/e93c1cc844923d7c3d8c0e5c6625d9f0_t3.mp4" numberspeed={-250} componentspeed={230} number={"005"} />
+                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/720p/22/28/92/22289235b3d1f7b54bd04ff99d21b0b3.mp4" numberspeed={-150} componentspeed={-230} number={"006"} />
             </div>
         </section>
 

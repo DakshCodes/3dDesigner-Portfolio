@@ -15,7 +15,7 @@ export default function Footer() {
     const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
     const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
     return (
-        <motion.div style={{y}} ref={container} className="contact">
+        <motion.div  ref={container} className="contact">
             <div className="body">
                 <div className="title">
                     <span>

@@ -1,8 +1,8 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import video from '../../assets/1552295514.mp4';
-// import hero from '../../assets/pic-3.png';
+import hero from '../../assets/pic-3.png';
 // import hero from '../../assets/pic-2.png';
-import hero from '../../assets/pic-1.png';
+// import hero from '../../assets/pic-1.png';
 import animateHome from './animations';
 import './style.css';
 
