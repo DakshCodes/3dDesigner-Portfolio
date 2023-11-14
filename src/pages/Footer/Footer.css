@@ -14,15 +14,19 @@
     justify-content: center;
     background-color: #000;
     position: relative;
-    height: 100vh;
+    height:fit-content;
     font-family: gridul;
 }
 
 .contact .body {
-    padding-top: 100px;
+    padding-top: 20px;
     width: 100%;
     max-width: 1800px;
+    overflow: hidden;
+    /* border: 1px solid red; */
     background-color: #000;
+    /* line-height: 1; */
+
 }
 
 .contact .body .title {
@@ -30,7 +34,7 @@
     margin-left: 200px;
     margin-right: 200px;
     position: relative;
-    margin-bottom: 8rem;
+    margin-bottom: 7rem;
     font-weight: 900;
     font-family: 'Syne', sans-serif;
     font-feature-settings: 'pnum' on, 'lnum' on;
@@ -42,8 +46,8 @@
 }
 
 .contact .body .title span .imageContainer {
-    width: 100px;
-    height: 100px;
+    width: 15vw;
+    height: 15vw;
     position: relative;
     border-radius: 50%;
     overflow: hidden;
@@ -58,7 +62,7 @@
 }
 
 .contact .body .title h2 {
-    font-size: 5vw;
+    font-size: 6vmax;
     margin: 0px;
     font-weight: 300;
 }
@@ -70,9 +74,10 @@
 }
 
 .contact .body .title .button {
+    border: 1px solid #fff;
     font-family: gridul;
-    width: 150px;
-    height: 150px;
+    width: 10vw;
+    height: 10vw;
     background-color: #000;
     border-radius: 50%;
     position: absolute;
@@ -84,7 +89,7 @@
 
 .contact .body .title .button p {
     margin: 0px;
-    font-size: 10px;
+    font-size: 1vw;
     font-weight: 100;
     z-index: 2;
     position: relative;
@@ -111,11 +116,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 60px 20px 60px;
-    height: 100px;
-    width: 270px;
+    padding: 20px 0px 20px 0px;
+    height: 6vmax;
+    width: 18vmax;
     margin: 0 auto;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+
+.contact .body .nav .roundedButton-1:nth-child(1) p {
+    font-size: 1.1vmax;
+}
+
+.contact .body .nav .roundedButton-1:nth-child(2) p {
+    font-size: 1vmax;
 }
 
 .contact .body .nav .roundedButton-1:hover {
@@ -130,15 +143,18 @@
 .contact .body .info {
     display: flex;
     justify-content: space-between;
-    margin-top: 200px;
-    padding: 20px;
+    margin-top: 100px;
+    padding: 30px;
 }
 
 .contact .body .info div {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     align-items: flex-end;
 }
+
+
+
 
 .contact .body .info div p,
 .contact .body .info div h3 {
@@ -167,16 +183,137 @@
 .contact .body .info div span {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    /* align-items: center; */
 }
 
 .contact .body .info div h3 {
     color: grey;
     cursor: default;
-    font-weight: 300;
-    font-size: 1em;
+    font-weight: 100;
+    font-size: 1.3em;
+    font-family: 'Syne', sans-serif;
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .valuexlabs {
+    /* text-align: center; */
     font-family: gridul;
+}
+
+
+@media (max-width:800px) {
+    .contact .body .title svg {
+        display: none;
+        position: absolute;
+        top: 30%;
+        left: 100%;
+    }
+
+    .contact .body .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 100px;
+        padding: 40px;
+        gap: 4rem;
+    }
+
+    .contact .body .info div:nth-child(2) {
+     flex-wrap: wrap;
+    }
+
+    .contact .body .title {
+        border-bottom: 1px solid #868686;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        margin-bottom: 8rem;
+        font-weight: 900;
+        font-family: 'Syne', sans-serif;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+
+    .contact .body .title span .imageContainer {
+        width: 15vmax;
+        height: 15vmax;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .contact .body .title span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .body .title h2 {
+        font-size: 12vw;
+        margin: 0px;
+        font-weight: 300;
+    }
+
+    .contact .body .title .button {
+        border: 1px solid #fff;
+        font-family: gridul;
+        width: 11vmax;
+        height: 11vmax;
+        background-color: #000;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .contact .body .title .buttonContainer {
+        position: absolute;
+        left: 10%;
+        top: 110%;
+        transform: translate(10%, 110%);
+    }
+
+    .contact .body .title .button p {
+        margin: 0px;
+        font-size: 0.7rem;
+        font-weight: 100;
+        z-index: 2;
+        position: relative;
+    }
+
+
+    .contact .body .nav {
+        display: flex;
+        gap: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    .contact .body .nav .roundedButton-1 {
+        border-radius: 3em;
+        border: 1px solid rgb(136, 136, 136);
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px 20px 0px;
+        height: 7vmax;
+        width: 24vmax;
+        margin: 0 auto;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+    }
+
+    .contact .body .nav .roundedButton-1:nth-child(1) p {
+        font-size: 2vmax;
+    }
+
+    .contact .body .nav .roundedButton-1:nth-child(2) p {
+        font-size: 2vmax;
+    }
+
 }
