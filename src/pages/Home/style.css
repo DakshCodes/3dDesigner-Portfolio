@@ -287,6 +287,7 @@
 
 
 @media (max-width :400px) {
+
     .hero-title {
         position: absolute;
         top: 50%;
@@ -294,18 +295,20 @@
         align-items: center;
         transform: translate(-50%, -50%) !important;
         text-transform: uppercase;
-        font-size: 20vw;
+        font-size: 19vw;
         color: var(--white);
         width: max-content;
         font-style: italic;
         font-weight: 900;
-        max-width: 360px;
         word-wrap: normal;
         z-index: 4;
         letter-spacing: 1px !important;
-        line-height: 0.9;
+        line-height: 1;
     }
 
+    #d {
+        font-size: 13vw;
+    }
 
     #studio {
         color: red;
