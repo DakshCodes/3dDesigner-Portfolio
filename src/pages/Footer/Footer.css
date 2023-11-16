@@ -258,8 +258,8 @@
     .contact .body .title .button {
         border: 1px solid #fff;
         font-family: gridul;
-        width: 11vmax;
-        height: 11vmax;
+        width: 15vmax;
+        height: 15vmax;
         background-color: #000;
         border-radius: 50%;
         position: absolute;
@@ -272,8 +272,8 @@
     .contact .body .title .buttonContainer {
         position: absolute;
         left: 10%;
-        top: 110%;
-        transform: translate(10%, 110%);
+        top: 107%;
+        transform: translate(10%, 107%);
     }
 
     .contact .body .title .button p {

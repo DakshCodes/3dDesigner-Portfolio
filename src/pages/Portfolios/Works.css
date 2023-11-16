@@ -10,7 +10,7 @@
 /* work ********/
 .work {
     padding-top: 150px;
-    height: 400vh;
+    height: 490vh;
     background-color: #000;
     font-family: 'Syne', sans-serif;
     font-feature-settings: 'pnum' on, 'lnum' on;
@@ -75,7 +75,7 @@
 
 
 .work__item-img #project-video {
-    scale: 1.5;
+    scale: 1.4 !important;
     display: block;
     position: absolute;
     left: 0;
@@ -84,6 +84,9 @@
     height: 100%;
     object-fit: cover;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+.work__item-img #project-video:hover{
+    scale: 1 ;
 }
 
 

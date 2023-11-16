@@ -1,7 +1,7 @@
 .slidingImages {
   display: flex;
   flex-direction: column;
-  gap: 6vw;
+  gap: 0vw !important;
   position: relative;
   margin-top: 100px;
   background-color: #fff;
@@ -10,28 +10,31 @@
   overflow: hidden;
 }
 
+.slider:nth-child(3){
+  margin-bottom: 3rem;
+}
+
 .slidingImages .slider:nth-child(3) {
   display: flex;
+  padding: 0 70px;
   position: relative;
   gap: 0vw;
   width: 120vw;
-  left: 10vw;
+  left: 26vw !important;
   height: fit-content;
 }
 
 .slidingImages .slider:nth-child(2) {
+  padding: 0 70px;
   display: flex;
   position: relative;
   gap: 0vw;
   width: 120vw;
-  left: 0vw;
+  left: -25vw !important;
 }
 
-.slidingImages .slider:nth-child(3) #wave {
-  position: relative;
-  width: 30%;
-  height: 100%;
-}
+
+
 
 .slidingImages .slider .project {
   width: 25%;
@@ -130,6 +133,14 @@
     left: 20vw;
 
   }
+  .slidingImages .slider:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 0vw;
+    width: 120vw;
+    left: -30vw;
+  }
 
   #wave {
     position: relative;
@@ -147,20 +158,32 @@
     width: 100% !important;
   }
 
-  .slidingImages .slider:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    gap: 0vw;
-    width: 120vw;
-    left: -30vw;
-  }
 
   .slidingImages .slider:nth-child(3) #wave {
     position: relative;
     width: 100%;
     height: 100%;
   }
+
+  .slidingImages .slider:nth-child(2) #wave {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slidingImages .slider:nth-child(2) #wave img {
+    position: relative;
+    object-fit: cover !important;
+    width: 100%;
+    height: 100%;
+  }
+  .slidingImages .slider:nth-child(3) #wave img {
+    position: relative;
+    object-fit: cover !important;
+    width: 100%;
+    height: 100%;
+  }
+
 
   .slidingImages {
     gap: 30vw;
