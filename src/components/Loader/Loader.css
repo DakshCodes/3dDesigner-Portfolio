@@ -4,7 +4,7 @@
     #PRELOADER
   \*-----------------------------------*/
 
-  .loader {
+.loader {
     position: absolute;
     z-index: 9999999999;
     width: 100%;
@@ -38,30 +38,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}  
-
-
-@media (max-width :800px) {
-    .loader-text h2{
-        font-family: 'Major Mono Display', monospace;
-        margin-top: 10rem;
-        color: #fff;
-        font-size: 2rem;
-        width: max-content;
-    } 
-    
 }
-.loader-text h2{
+
+
+.loader-text h2 {
     font-family: 'Major Mono Display', monospace;
     margin-top: 10rem;
     color: #fff;
     font-size: 6rem;
     width: max-content;
-} 
+}
 
-.loader-text img{
+@media (max-width :800px) {
+    .loader-text h2 {
+        font-family: 'Major Mono Display', monospace;
+        margin-top: 10rem;
+        color: #fff;
+        font-size: 11vw !important;
+        width: max-content;
+    }
+
+    .loader-text img {
+        height: 10rem;
+        object-fit: contain;
+    }
+}
+
+.loader-text img {
     height: 25rem;
 }
+
 .overlay-loader {
     width: 100%;
     height: 100vh;

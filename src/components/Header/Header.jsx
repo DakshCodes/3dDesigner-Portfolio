@@ -1,6 +1,6 @@
 import React, { useEffect, useLayoutEffect } from 'react'
 import './Header.css'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/Logo-3d.png'
 import gsap from 'gsap';
 import Magnetic from '../../common/Magnetic';
 import { Link } from 'react-router-dom';
@@ -33,9 +33,7 @@ const Header = () => {
             <header className="header" data-header>
                 <div className="container">
                     <Link to={'/'}>
-                        <a href="#" className="logo">
-                            <img src={logo} width={170} height={40} alt="Pfolio home" />
-                        </a>
+                        <img id="logo" src={logo} alt="Pfolio home" />
                     </Link>
                     <button className="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
                         <span className="line line-1" />
