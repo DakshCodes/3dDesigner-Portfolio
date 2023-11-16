@@ -3,6 +3,7 @@ import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header/Header';
 import Landing from './pages/Home';
 import LoaderAnimation from './components/Loader/animation';
+import Contact from './pages/contact/Contact'
 import Services from './pages/Service/Services';
 import Featured from './pages/Featured/Featured';
 import Footer from './pages/Footer/Footer';
@@ -53,6 +54,7 @@ function App() {
 
         {/* Work */}
         <Route path='/works' element={<Works />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </>

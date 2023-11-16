@@ -55,7 +55,7 @@ const Header = () => {
                                     <a href="#" className="navbar-link">Portfolio</a>
                                 </li>
                             </Link>
-                            <Link to={'/conatct'}>
+                            <Link to={'/contact'}>
                                 <li data-nav-toggler>
                                     <a href="#" className="navbar-link">Contact</a>
                                 </li>
