@@ -295,10 +295,11 @@
         align-items: center;
         transform: translate(-50%, -50%) !important;
         text-transform: uppercase;
-        font-size: 18vw;
+        font-size: 16vw;
+        margin-left: 2rem;
         color: var(--white);
         width: max-content;
-        max-width: 330px;
+        max-width: 360px;
         font-style: italic;
         font-weight: 900;
         word-wrap: normal;
