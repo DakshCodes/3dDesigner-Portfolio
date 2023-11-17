@@ -100,10 +100,10 @@ const Works = () => {
             <div className="work__wrapp"
                 ref={workWrapper}
             >
-                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/expMp4/11/57/38/1157385f7a7d8152cf14bbfb4fb093ec_t3.mp4" numberspeed={-400} componentspeed={800} number={"001"} />
-                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/expMp4/3f/b4/e4/3fb4e41e0e27e4146b87398cee8719c9_t3.mp4" numberspeed={-500} componentspeed={600} number={"002"} />
-                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/720p/c1/32/0c/c1320cf3edba286632c6810b09ad3de5.mp4" numberspeed={-400} componentspeed={500} number={"003"} />
-                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/720p/95/92/71/959271eceee104db73c0930ab3a7135a.mp4" numberspeed={-250} componentspeed={530} number={"004"} />
+                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/expMp4/11/57/38/1157385f7a7d8152cf14bbfb4fb093ec_t3.mp4" numberspeed={-400} componentspeed={800} number={"Modeling King"} />
+                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/expMp4/3f/b4/e4/3fb4e41e0e27e4146b87398cee8719c9_t3.mp4" numberspeed={-500} componentspeed={600} number={"Trphy Juice"} />
+                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/720p/c1/32/0c/c1320cf3edba286632c6810b09ad3de5.mp4" numberspeed={-400} componentspeed={500} number={"Greatness"} />
+                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/720p/95/92/71/959271eceee104db73c0930ab3a7135a.mp4" numberspeed={-250} componentspeed={530} number={"Extro"} />
                 <WorkItem videoSource="https://v1.pinimg.com/videos/mc/expMp4/e9/3c/1c/e93c1cc844923d7c3d8c0e5c6625d9f0_t3.mp4" numberspeed={-50} componentspeed={630} number={"005"} />
                 <WorkItem videoSource="https://v1.pinimg.com/videos/mc/720p/22/28/92/22289235b3d1f7b54bd04ff99d21b0b3.mp4" numberspeed={-150} componentspeed={530} number={"006"} />
             </div>

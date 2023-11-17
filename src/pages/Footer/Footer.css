@@ -36,8 +36,8 @@
     position: relative;
     margin-bottom: 7rem;
     font-weight: 900;
-    font-family: 'Syne', sans-serif;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
 }
 
 .contact .body .title span {
@@ -46,8 +46,8 @@
 }
 
 .contact .body .title span .imageContainer {
-    width: 15vw;
-    height: 15vw;
+    width: 12vw;
+    height: 12vw;
     position: relative;
     border-radius: 50%;
     overflow: hidden;
@@ -62,7 +62,7 @@
 }
 
 .contact .body .title h2 {
-    font-size: 6vmax;
+    font-size: 5vmax;
     margin: 0px;
     font-weight: 300;
 }

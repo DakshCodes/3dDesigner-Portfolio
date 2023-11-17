@@ -3,12 +3,9 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import './Featured.css'; // Import your CSS/SASS styles here
 import Rounded from '../../common/RoundedButton';
 import img1 from '../../assets/img1.jpeg'
-import img2 from '../../assets/Wave.gif'
-import img3 from '../../assets/img3.jpeg'
-import img4 from '../../assets/Wave.gif'
-import img5 from '../../assets/img5.jpeg'
-import img6 from '../../assets/Wave.gif'
-import img7 from '../../assets/img9.jpeg'
+import img2 from '../../assets/img3.jpeg'
+import img3 from '../../assets/img5.jpeg'
+import img4 from '../../assets/img9.jpeg'
 import img8 from '../../assets/Wave.gif'
 import img9 from '../../assets/img9.jpeg'
 import gsap from 'gsap';
@@ -23,32 +20,25 @@ const slider1 = [
     {
         color: "#d6d7dc",
         src: img2,
-        id: "wave"
-    },
-    {
-        color: "#e3e3e3",
-        src: img3
     },
     {
         color: "#d6d7dc",
-        src: img2,
-        id: "wave"
+        src: img4,
     },
 ];
 
 const slider2 = [
     {
         color: "#d4e3ec",
-        src: img5
+        src: img4
     },
     {
         color: "#e5e0e1",
-        src: img6,
-        id: "wave"
+        src: img3,
     },
     {
         color: "#d7d4cf",
-        src: img7,
+        src: img2,
     }
 ];
 

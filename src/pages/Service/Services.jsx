@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
-import Project from './component/Project';
 import './Services.css';
 
 const projects = [
@@ -27,58 +26,8 @@ const projects = [
   }
 ];
 
-const scaleAnimation = {
-  initial: { scale: 0, x: "-50%", y: "-50%" },
-  enter: {
-    scale: 1,
-    x: "-50%",
-    y: "-50%",
-    transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] }
-  },
-  closed: {
-    scale: 0,
-    x: "-50%",
-    y: "-50%",
-    transition: { duration: 0.4, ease: [0.32, 0, 0.67, 0] }
-  }
-};
 
 const Home = () => {
-  const [modal, setModal] = useState({ active: false, index: 0 });
-  const { active, index } = modal;
-  const modalContainer = useRef(null);
-  const cursor = useRef(null);
-  const cursorLabel = useRef(null);
-
-  let xMoveContainer = useRef(null);
-  let yMoveContainer = useRef(null);
-  let xMoveCursor = useRef(null);
-  let yMoveCursor = useRef(null);
-  let xMoveCursorLabel = useRef(null);
-  let yMoveCursorLabel = useRef(null);
-
-  useEffect(() => {
-    xMoveContainer.current = gsap.quickTo(modalContainer.current, "left", { duration: 0.8, ease: "power3" });
-    yMoveContainer.current = gsap.quickTo(modalContainer.current, "top", { duration: 0.8, ease: "power3" });
-    xMoveCursor.current = gsap.quickTo(cursor.current, "left", { duration: 0.5, ease: "power3" });
-    yMoveCursor.current = gsap.quickTo(cursor.current, "top", { duration: 0.5, ease: "power3" });
-    xMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "left", { duration: 0.45, ease: "power3" });
-    yMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "top", { duration: 0.45, ease: "power3" });
-  }, []);
-
-  const moveItems = (x, y) => {
-    xMoveContainer.current(x);
-    yMoveContainer.current(y);
-    xMoveCursor.current(x);
-    yMoveCursor.current(y);
-    xMoveCursorLabel.current(x);
-    yMoveCursorLabel.current(y);
-  };
-
-  const manageModal = (active, index, x, y) => {
-    moveItems(x, y);
-    setModal({ active, index });
-  };
 
   useEffect(() => {
     gsap.to('.section-title__square', {
@@ -94,33 +43,80 @@ const Home = () => {
 
 
   return (
-    <main onMouseMove={(e) => { moveItems(e.clientX, e.clientY); }} className='projects'>
+    <main className='projects'>
       <h2 class="section-title">servic<span class="stroke">es</span>
         <span class="section-title__square"></span>
       </h2>
-      <div className="body">
-        {
-          projects.map((project, index) => (
-            <Project key={index} index={index} title={project.title} manageModal={manageModal} />
-          ))
-        }
-      </div>
-      <>
-        <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className="modalContainer">
-          <div style={{ top: index * -100 + "%" }} className="modalSlider">
-            {
-              projects.map((project, index) => {
-                const { src, color } = project;
-                return (
-                  <div className="modal" style={{ backgroundColor: color }} key={`modal_${index}`}>
-                    <img src={src} width={300} alt="image" />
-                  </div>
-                );
-              })
-            }
+      <div className="services-main">
+        <div className="service-box">
+          <div className="service-card">
+            <div className="ag-courses_item">
+              <div className="ag-courses-item_link">
+                <div className="ag-courses-item_bg"
+                  style={{ "--tooltip-color": "#706D63" }}
+                />
+                <div className="ag-courses-item_title">
+                  /3d Modeling
+                </div>
+              </div>
+            </div>
           </div>
-        </motion.div>
-      </>
+          <div className="service-content">
+            <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
+          </div>
+        </div>
+        <div className="service-box">
+          <div className="service-card">
+            <div className="ag-courses_item">
+              <div className="ag-courses-item_link">
+                <div className="ag-courses-item_bg"
+                  style={{ "--tooltip-color": "red" }}
+                />
+                <div className="ag-courses-item_title">
+                  /Animations
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="service-content">
+            <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
+          </div>
+        </div>
+        <div className="service-box">
+          <div className="service-card">
+            <div className="ag-courses_item">
+              <div className="ag-courses-item_link">
+                <div className="ag-courses-item_bg"
+                  style={{ "--tooltip-color": "#18fff7" }}
+                />
+                <div className="ag-courses-item_title">
+                  /Video Editing
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="service-content">
+            <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
+          </div>
+        </div>
+        <div className="service-box">
+          <div className="service-card">
+            <div className="ag-courses_item">
+              <div className="ag-courses-item_link">
+                <div className="ag-courses-item_bg"
+                  style={{ "--tooltip-color": "#ffe0c1" }}
+                />
+                <div className="ag-courses-item_title">
+                  /Graphic Designing
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="service-content">
+            <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 };

@@ -63,11 +63,11 @@
     user-select: none;
     position: absolute;
     top: 95%;
-    left: 5%;
-    transform: translate(-10%, 95%) !important;
+    left: 22% !important;
+    transform: translate(0%, 95%) !important;
     z-index: 13;
     text-transform: initial;
-    font-size: 10vw !important;
+    font-size: 8vw !important;
     color: var(--white);
     font-weight: 900;
     width: max-content;
@@ -76,14 +76,14 @@
 
 .hero-banner {
     position: absolute;
-    left: -10%;
+    left: -10% !important;
     user-select: none;
-    top: 40%;
+    top: 80% !important;
     transform: rotate(-60deg) translate(10%, -30%);
     border-radius: var(--blob-radius);
     background-color: red;
-    height: 800px;
-    width: 600px;
+    height: 700px !important;
+    width: 900px !important;
     /* opacity: 0.2; */
     animation: blobAnim 10s alternate infinite;
 }
@@ -109,7 +109,7 @@
         /* left: 50%; */
         transform: translate(-50%, -100%) !important;
         text-transform: initial;
-        font-size: 13vw !important;
+        font-size: 10vw !important;
         color: var(--white);
         font-weight: 900;
         width: max-content;
@@ -253,25 +253,7 @@
 
 @media (max-width :400px) {
 
-    .hero-title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        align-items: center;
-        transform: translate(-50%, -50%) !important;
-        text-transform: uppercase;
-        font-size: 16vw;
-        margin-left: 2rem;
-        color: var(--white);
-        width: max-content;
-        max-width: 360px;
-        font-style: italic;
-        font-weight: 900;
-        word-wrap: normal;
-        z-index: 4;
-        letter-spacing: 1px !important;
-        line-height: 1;
-    }
+
 
     #d {
         font-size: 13vw;
@@ -309,7 +291,7 @@
     .hero-title2 {
         /* position: absolute; */
         top: 100%;
-        left: 50%;
+        left: 50% !important;
         transform: translate(-50%, -100%) !important;
         text-transform: initial;
         font-size: 20vw !important;
@@ -321,11 +303,11 @@
     .hero-banner {
         z-index: 0;
         position: absolute;
-        left: 50%;
-        top: -50%;
+        left: 50% !important;
+        top: 90% !important;
         transform: translate(-50%, -50%);
         border-radius: var(--blob-radius);
-        height: 400px;
+        height: 200px !important;
         width: 600px;
         opacity: 1 !important;
         animation: blobAnim 10s linear infinite;
