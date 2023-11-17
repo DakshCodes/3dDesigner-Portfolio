@@ -9,6 +9,7 @@ import Featured from './pages/Featured/Featured';
 import Footer from './pages/Footer/Footer';
 import { Routes, Route, useNavigate } from "react-router-dom"
 import Works from './pages/Portfolios/Works';
+import Testimonial from './pages/Testimonials';
 
 
 
@@ -49,6 +50,7 @@ function App() {
             <Landing />
             <Services />
             <Featured />
+            <Testimonial />
           </>
         } />
 

@@ -3,7 +3,7 @@ import Rounded from '../../common/RoundedButton';
 import { useRef } from 'react';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
 import Magnetic from '../../common/Magnetic';
-import footer from '../../assets/footer.jpeg'
+import footer from '../../assets/ankit.jpg'
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -17,7 +17,7 @@ export default function Footer() {
     const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
     return (
         <motion.div ref={container} className="contact">
-            <div className="body">
+            <div className="body mt-10">
                 <div className="title">
                     <span>
                         <div className="imageContainer">
@@ -27,9 +27,9 @@ export default function Footer() {
                                 src={footer}
                             />
                         </div>
-                        <h2>Let's work</h2>
+                        <h2 clss>Let's work</h2>
                     </span>
-                    <h2>together</h2>
+                    <h2 clss>together</h2>
                     <motion.div style={{ x }} className="buttonContainer">
                         <Rounded backgroundColor={"red"} className="button">
                             <p>Get in touch</p>
@@ -41,7 +41,7 @@ export default function Footer() {
                 </div>
                 <div className="nav">
                     <div className='roundedButton-1'>
-                        <p>info@ankit.com</p>
+                        <p>itx3dstudio@gmail.com</p>
                     </div>
                     <div className='roundedButton-1'>
                         <p>+31 xxx 80 xx</p>
@@ -54,15 +54,15 @@ export default function Footer() {
                             <p>2023 © Edition</p>
                         </span>
                         <span>
-                            <h3>Develope & Design</h3>
-                            <Link target={"_blank"}>
+                            <h3>Developed & Designed by</h3>
+                            <Link to={"https://www.instagram.com/valuexlabs/"} target={"_blank"}>
                                 <p className='valuexlabs'>ValueXLabs</p>
                             </Link>
                         </span>
                     </div>
                     <div>
                         <span>
-                            <h3>socials</h3>
+                            <h3>Socials</h3>
                             <Magnetic>
                                 <p>Awwwards</p>
                             </Magnetic>

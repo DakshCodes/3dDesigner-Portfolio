@@ -140,3 +140,47 @@ body {
     z-index: 99999999;
     /* so that it stays on top of all other elements */
 }
+
+.syne{
+    font-family:'Syne', sans-serif;
+}
+
+.swiper-pagination-bullet {
+    background-color: #fff;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* Optionally, you can also change the active pagination circle color */
+  .swiper-pagination-bullet-active {
+    background-color: red;
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  .opensans{
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .side{
+    box-shadow: 0px 10px 92px 100px rgba(0,0,0,0.8);
+  }
+
+  /* Example media queries */
+@media (max-width: 767px) {
+    .swiper-container {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .swiper-container {
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .swiper-container {
+      width: 60%;
+    }
+  }
