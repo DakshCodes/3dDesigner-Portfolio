@@ -192,8 +192,6 @@
     cursor: default;
     font-weight: 100;
     font-size: 1.3em;
-    font-family: 'Syne', sans-serif;
-    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .valuexlabs {
@@ -230,8 +228,6 @@
         position: relative;
         margin-bottom: 8rem;
         font-weight: 900;
-        font-family: 'Syne', sans-serif;
-        font-feature-settings: 'pnum' on, 'lnum' on;
     }
 
 
