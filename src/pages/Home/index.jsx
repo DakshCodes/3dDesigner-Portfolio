@@ -64,7 +64,6 @@ const Landing = () => {
                     <div className="hero-content">
                         <div className="hero-banner">
                         </div>
-                        <h1 className="h1 hero-title">itx <span id='d'>3d</span><span id='studio'> studio </span> </h1>
                         <h1 className="h2 hero-title2">Ankit</h1>
                     </div>
                 </div>

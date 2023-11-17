@@ -6,13 +6,11 @@
   margin-top: 100px;
   background-color: #fff;
   z-index: 1;
-  height: 200vh;
+  height: 180vh;
   overflow: hidden;
 }
 
-.slider:nth-child(3){
-  margin-bottom: 3rem;
-}
+
 
 .slidingImages .slider:nth-child(3) {
   display: flex;
@@ -20,8 +18,14 @@
   position: relative;
   gap: 0vw;
   width: 120vw;
-  left: 26vw !important;
+  left: 0vw ;
   height: fit-content;
+}
+.slidingImages .slider:nth-child(3) #wave{
+  
+    position: relative;
+    width: 40%;
+    height: 100%;
 }
 
 .slidingImages .slider:nth-child(2) {
@@ -130,7 +134,7 @@
     position: relative;
     gap: 0vw;
     width: 120vw;
-    left: 20vw;
+    left: 29vw !important;
 
   }
   .slidingImages .slider:nth-child(2) {

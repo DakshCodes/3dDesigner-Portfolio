@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap'; // Make sure you have gsap properly installed
-import logo from '../../assets/logo.png'
+import logo from '../../assets/Logo-3d.png'
 import './Loader.css'
 
 function LoaderAnimation() {
@@ -57,7 +57,7 @@ function LoaderAnimation() {
         <div className="loader">
             <div className="container-loader">
                 <div className="loader-text">
-                    <h2>3D Artist</h2>
+                    <h2>Itx <span id='d'>3d</span><span id="studio">Studio</span></h2>
                     <img src={logo} alt />
                 </div>
                 <div className="overlay-loader">
