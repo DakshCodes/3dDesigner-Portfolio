@@ -48,12 +48,12 @@ const Home = () => {
         <span class="section-title__square"></span>
       </h2>
       <div className="services-main">
-        <div className="service-box">
+        <div className="service-box" style={{ "--tooltip-border": "#83A2FF" }}>
           <div className="service-card">
             <div className="ag-courses_item">
               <div className="ag-courses-item_link">
                 <div className="ag-courses-item_bg"
-                  style={{ "--tooltip-color": "#706D63" }}
+                  style={{ "--tooltip-color": "#83A2FF" }}
                 />
                 <div className="ag-courses-item_title">
                   /3d Modeling
@@ -65,12 +65,12 @@ const Home = () => {
             <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
           </div>
         </div>
-        <div className="service-box">
+        <div className="service-box" style={{ "--tooltip-border": "#B4BDFF" }}>
           <div className="service-card">
             <div className="ag-courses_item">
               <div className="ag-courses-item_link">
                 <div className="ag-courses-item_bg"
-                  style={{ "--tooltip-color": "red" }}
+                  style={{ "--tooltip-color": "#B4BDFF" }}
                 />
                 <div className="ag-courses-item_title">
                   /Animations
@@ -82,12 +82,12 @@ const Home = () => {
             <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
           </div>
         </div>
-        <div className="service-box">
+        <div className="service-box" style={{ "--tooltip-border": "#435585" }}>
           <div className="service-card">
             <div className="ag-courses_item">
               <div className="ag-courses-item_link">
                 <div className="ag-courses-item_bg"
-                  style={{ "--tooltip-color": "#18fff7" }}
+                  style={{ "--tooltip-color": "#435585" }}
                 />
                 <div className="ag-courses-item_title">
                   /Video Editing
@@ -99,12 +99,12 @@ const Home = () => {
             <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
           </div>
         </div>
-        <div className="service-box">
+        <div className="service-box" style={{ "--tooltip-border": "#FFD28F" }}>
           <div className="service-card">
             <div className="ag-courses_item">
               <div className="ag-courses-item_link">
                 <div className="ag-courses-item_bg"
-                  style={{ "--tooltip-color": "#ffe0c1" }}
+                  style={{ "--tooltip-color": "#FFD28F" }}
                 />
                 <div className="ag-courses-item_title">
                   /Graphic Designing

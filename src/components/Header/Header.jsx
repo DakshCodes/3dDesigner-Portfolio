@@ -53,11 +53,19 @@ const Header = () => {
                                     <a href="#" className="navbar-link">Portfolio</a>
                                 </li>
                             </Link>
+
+                            <Link to={'/about'}>
+                                <li data-nav-toggler>
+                                    <a href="#" className="navbar-link">About</a>
+                                </li>
+                            </Link>
+                            
                             <Link to={'/contact'}>
                                 <li data-nav-toggler>
                                     <a href="#" className="navbar-link">Contact</a>
                                 </li>
                             </Link>
+
 
                         </ul>
                     </nav>

@@ -66,11 +66,18 @@
 }
 
 @media (max-width :800px) {
+
+
+    .loader-text h2 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     .loader-text h2 {
         margin-top: 8rem;
         color: #fff;
         font-size: 6vw !important;
-        width: 220px;
+        width: 350px;
     }
 
 
@@ -78,7 +85,7 @@
         text-transform: uppercase;
         font-feature-settings: 'pnum' on, 'lnum' on;
         letter-spacing: 5px;
-        font-size: 7vw;
+        font-size: 5vw;
         color: red !important;
     }
 

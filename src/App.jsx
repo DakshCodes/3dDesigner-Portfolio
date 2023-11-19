@@ -10,6 +10,7 @@ import Footer from './pages/Footer/Footer';
 import { Routes, Route, useNavigate } from "react-router-dom"
 import Works from './pages/Portfolios/Works';
 import Testimonial from './pages/Testimonials';
+import About from './pages/About/About';
 
 
 
@@ -59,6 +60,9 @@ function App() {
 
         {/* Contact */}
         <Route path='/contact' element={<Contact />} />
+
+        {/* about */}
+        <Route path='/about' element={<About />} />
       </Routes>
       <Footer />
     </>
