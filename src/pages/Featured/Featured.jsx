@@ -69,15 +69,22 @@ const Featured = () => {
 
     return (
         <div ref={container} className="slidingImages">
-            <h2 class="featured-title">Featur<span class="stroke">ed</span>
+            <motion.h2
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0, }}
+                transition={{ duration: 0.4 }}
+                class="featured-title">Featur<span class="stroke">ed</span>
                 <span class="featured-title__square"></span>
-            </h2>
+            </motion.h2>
             <motion.div style={{ x: x1 }} className="slider">
                 {
                     slider1.map((project, index) => {
                         return <div key={index} className="project" style={{ backgroundColor: project.color }} >
                             <div className="imageContainer" id={project.id}>
-                                <img
+                                <motion.img
+                                    initial={{ height: "-100%" }}
+                                    whileInView={{ height: "100%", }}
+                                    transition={{ duration: 0.7, ease: 'circOut' }}
                                     fill={true}
                                     alt={"image"}
                                     src={project.src} />
@@ -91,7 +98,10 @@ const Featured = () => {
                     slider2.map((project, index) => {
                         return <div key={index} className="project" id={project.id} style={{ backgroundColor: project.id === "wave" ? "#fff" : project.color }} >
                             <div key={index} className="imageContainer" >
-                                <img
+                                <motion.img
+                                    initial={{ height: "-100%" }}
+                                    whileInView={{ height: "100%", }}
+                                    transition={{ duration: 0.7, ease: 'circOut' }}
                                     fill={true}
                                     alt={"image"}
                                     src={project.src} />

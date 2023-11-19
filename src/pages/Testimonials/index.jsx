@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Navigation, Pagination, Scrollbar, A11y ,Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 // import SwiperCore, { Autoplay, EffectCoverflow } from 'swiper/core';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ImQuotesLeft } from "react-icons/im";
@@ -7,6 +7,7 @@ import img1 from '../../assets/img1.jpeg'
 import img2 from '../../assets/img3.jpeg'
 import img3 from '../../assets/img5.jpeg'
 import img4 from '../../assets/img9.jpeg'
+import {motion} from 'framer-motion'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -20,46 +21,50 @@ const Testimonial = () => {
     const [slidesPerView, setSlidesPerView] = useState(1);
 
     useEffect(() => {
-      // Update slidesPerView based on screen size
-      const handleResize = () => {
-        if (window.innerWidth >= 768) {
-          setSlidesPerView(2.6);
-        } else {
-          setSlidesPerView(1);
-        }
-      };
-  
-      // Set initial slidesPerView
-      handleResize();
-  
-      // Attach event listener for window resize
-      window.addEventListener('resize', handleResize);
-  
-      // Cleanup the event listener on component unmount
-      return () => window.removeEventListener('resize', handleResize);
+        // Update slidesPerView based on screen size
+        const handleResize = () => {
+            if (window.innerWidth >= 768) {
+                setSlidesPerView(2.6);
+            } else {
+                setSlidesPerView(1);
+            }
+        };
+
+        // Set initial slidesPerView
+        handleResize();
+
+        // Attach event listener for window resize
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     // SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverflow]); // Include Autoplay in the SwiperCore.use
     const handleSlideChange = (swiper) => {
         // Start autoplay when the Swiper is initialized
         if (!swiper.autoplay.running) {
-          swiper.autoplay.start();
+            swiper.autoplay.start();
         }
-      };
+    };
 
     return (
         <>
             <div className='text-white  max-w-[1800px] mx-auto my-10 mb-10'>
                 <div className='p-4 '>
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0, }}
+                        transition={{ duration: 0.4 }}
+                    >
                         <h1 className='text-lg md:text-[3rem] text-center syne'>Hear from them</h1>
-                    </div>
+                    </motion.div>
 
                     {/* swiper */}
                     <div className="swiper   my-10">
                         <div className='side hidden md:block bg-[#000] w-[1rem] z-50 absolute -top-8 h-full'>.</div>
                         <Swiper
-                            modules={[Navigation, Pagination, Scrollbar, A11y ,Autoplay]}
+                            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                             spaceBetween={50}
                             slidesPerView={slidesPerView}
                             centeredSlides={true} // Center the active slide
@@ -97,7 +102,6 @@ const Testimonial = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-
 
                                             </SwiperSlide>
                                         </>

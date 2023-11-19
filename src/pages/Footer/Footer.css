@@ -299,13 +299,13 @@
         justify-content: center;
         padding: 20px 0px 20px 0px;
         height: 7vmax;
-        width: 24vmax;
+        width: 28vmax;
         margin: 0 auto;
         transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
     }
 
     .contact .body .nav .roundedButton-1:nth-child(1) p {
-        font-size: 2vmax;
+        font-size: 1.8vmax;
     }
 
     .contact .body .nav .roundedButton-1:nth-child(2) p {

@@ -10,7 +10,7 @@
 /* work ********/
 .work {
     padding-top: 150px;
-    height: 490vh;
+    height: max-content;
     background-color: #000;
     font-family: 'Syne', sans-serif;
     font-feature-settings: 'pnum' on, 'lnum' on;
@@ -18,10 +18,10 @@
 
 .work__wrapp {
     width: 100%;
-    height: fit-content;
+    height: max-content;
     display: flex;
     justify-content: space-around;
-    row-gap: 100px;
+    row-gap: 600px;
     /* flex-direction: column; */
     flex-wrap: wrap;
 }
@@ -48,16 +48,30 @@
         height: 120vmin;
     }
 
+    .work__wrapp {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: space-around;
+        row-gap: 100px;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    
+
 }
 
 
 .work__item-num {
     position: absolute;
     display: inline-block;
-    font-size: 4vmax;
+    font-size: 5vmax;
+    width: 100%;
     color: var(--pr-color);
     /* color: #fff; */
-    mix-blend-mode: difference;
+    mix-blend-mode: exclusion;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
     z-index: 2;
 }
 

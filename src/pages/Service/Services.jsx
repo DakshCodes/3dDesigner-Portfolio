@@ -44,11 +44,20 @@ const Home = () => {
 
   return (
     <main className='projects'>
-      <h2 class="section-title">servic<span class="stroke">es</span>
+      <motion.h2
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0, }}
+        transition={{ duration: 0.4 }}
+
+        class="section-title">servic<span class="stroke">es</span>
         <span class="section-title__square"></span>
-      </h2>
+      </motion.h2>
       <div className="services-main">
-        <div className="service-box" style={{ "--tooltip-border": "#83A2FF" }}>
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0, }}
+          transition={{ duration: 0.4 }}
+          className="service-box" style={{ "--tooltip-border": "#83A2FF" }}>
           <div className="service-card">
             <div className="ag-courses_item">
               <div className="ag-courses-item_link">
@@ -64,8 +73,12 @@ const Home = () => {
           <div className="service-content">
             <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
           </div>
-        </div>
-        <div className="service-box" style={{ "--tooltip-border": "#B4BDFF" }}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 80 }}
+          whileInView={{ opacity: 1, x: 0, }}
+          transition={{ duration: 0.4 }}
+          className="service-box" style={{ "--tooltip-border": "#B4BDFF" }}>
           <div className="service-card">
             <div className="ag-courses_item">
               <div className="ag-courses-item_link">
@@ -81,8 +94,12 @@ const Home = () => {
           <div className="service-content">
             <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
           </div>
-        </div>
-        <div className="service-box" style={{ "--tooltip-border": "#435585" }}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0, }}
+          transition={{ duration: 0.4 }}
+          className="service-box" style={{ "--tooltip-border": "#435585" }}>
           <div className="service-card">
             <div className="ag-courses_item">
               <div className="ag-courses-item_link">
@@ -98,8 +115,12 @@ const Home = () => {
           <div className="service-content">
             <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
           </div>
-        </div>
-        <div className="service-box" style={{ "--tooltip-border": "#FFD28F" }}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 80 }}
+          whileInView={{ opacity: 1, x: 0, }}
+          transition={{ duration: 0.4 }}
+          className="service-box" style={{ "--tooltip-border": "#FFD28F" }}>
           <div className="service-card">
             <div className="ag-courses_item">
               <div className="ag-courses-item_link">
@@ -115,7 +136,7 @@ const Home = () => {
           <div className="service-content">
             <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </main>
   );
