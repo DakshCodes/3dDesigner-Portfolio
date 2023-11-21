@@ -214,7 +214,7 @@
         justify-content: space-between;
         margin-top: 100px;
         padding: 40px;
-        gap: 4rem;
+        gap: 3rem ;
     }
 
     .contact .body .info div:nth-child(2) {
@@ -232,6 +232,7 @@
 
 
     .contact .body .title span .imageContainer {
+        border: 1px solid red;
         width: 15vmax;
         height: 15vmax;
         position: relative;
@@ -264,7 +265,7 @@
         justify-content: center;
         cursor: pointer;
     }
-
+    
     .contact .body .title .buttonContainer {
         position: absolute;
         left: 10%;
@@ -300,7 +301,7 @@
         padding: 20px 0px 20px 0px;
         height: 7vmax;
         width: 28vmax;
-        margin: 0 auto;
+        margin: 4rem auto;
         transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
     }
 
