@@ -29,7 +29,7 @@ const WorkItem = ({ videoSource, number, componentspeed, numberspeed }) => {
             onMouseLeave={handleHoverOut}
         >
             <motion.div className="work__item-img">
-                <motion.span className="work__item-num" data-speed={numberspeed}>/{number}</motion.span>
+                <motion.span className="work__item-num" data-speed={numberspeed}>{number}</motion.span>
                 <motion.video loop muted preload="auto" ref={videoRef} id="project-video">
                     <source src={videoSource} type="video/mp4" />
                 </motion.video>

@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './About.css'
 
 const About = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // This line will scroll the window to the top
+    }, [])
     return (
         <div className='about-main'>
             <div className="about-profile">
-                
+
                 <div className="profile-pics">
                     <div className="img-bg-1"></div>
                     <div className="img-bg-2"></div>

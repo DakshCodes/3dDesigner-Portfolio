@@ -32,12 +32,14 @@
 .contact .body .title {
     border-bottom: 1px solid #868686;
     margin-left: 200px;
+    padding-bottom: 3.3rem;
     margin-right: 200px;
     position: relative;
     margin-bottom: 7rem;
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
+    line-height: 0.1;
 }
 
 .contact .body .title span {
@@ -65,6 +67,7 @@
     font-size: 5vmax;
     margin: 0px;
     font-weight: 300;
+    margin-left: 15rem;
 }
 
 .contact .body .title .buttonContainer {
@@ -208,6 +211,12 @@
         left: 100%;
     }
 
+    .contact .body .title h2 {
+        font-size: 5vmax;
+        text-align: center;
+        font-weight: 300;
+    }
+
     .contact .body .info {
         display: flex;
         flex-direction: column;
@@ -228,6 +237,7 @@
         position: relative;
         margin-bottom: 8rem;
         font-weight: 900;
+        line-height: 1.2 !important;
     }
 
 

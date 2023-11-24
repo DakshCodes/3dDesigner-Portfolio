@@ -25,8 +25,10 @@ const Landing = () => {
     }, []);
 
     useLayoutEffect(() => {
+        window.scrollTo(0, 0); // This line will scroll the window to the top
         animateHome();
     }, []);
+
 
     return (
         <>
@@ -64,7 +66,6 @@ const Landing = () => {
                     <div className="hero-content">
                         <div className="hero-banner">
                         </div>
-                        <h1 className="h2 hero-title2">Ankit</h1>
                     </div>
                 </div>
             </section>

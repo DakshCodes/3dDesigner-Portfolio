@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useFormik } from 'formik'
 import { Toaster, toast } from "react-hot-toast"
 import { registerValidate } from '../../validate';
@@ -31,6 +31,10 @@ const Contact = () => {
 
   })
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // This line will scroll the window to the top
+  }, [])
+
   return (
     <>
       <Toaster position="top-center" reverseorder={false}></Toaster>
@@ -39,7 +43,6 @@ const Contact = () => {
         <div className="page">
 
           <div className="first">
-            <img src={img} alt="" />
             <h1> WE,D LOVE TO </h1>
             <h1>HEAR FROM YOU</h1>
             <img className="image" src={model} alt="" />

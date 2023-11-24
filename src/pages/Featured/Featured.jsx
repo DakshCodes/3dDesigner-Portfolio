@@ -44,15 +44,19 @@ const slider2 = [
 
 const Featured = () => {
 
+    const mediaQuery = window.matchMedia('(min-width: 801px)');
     const container = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: container,
-        offset: ["start end", "end start"]
-    })
 
-    const x1 = useTransform(scrollYProgress, [0, 1], [0, 200])
-    const x2 = useTransform(scrollYProgress, [0, 1], [0, -200])
-    const height = useTransform(scrollYProgress, [0, 0.9], [200, 0])
+ 
+        const { scrollYProgress } = useScroll({
+            target: container,
+            offset: ["start end", "end start"]
+        })
+
+    const x1 =   mediaQuery.matches && useTransform(scrollYProgress, [0, 1], [0, 200])
+    const x2 =   mediaQuery.matches && useTransform(scrollYProgress, [0, 1], [0, -200])
+    const height =   mediaQuery.matches && useTransform(scrollYProgress, [0, 0.9], [200, 0])
+
 
     useEffect(() => {
         gsap.to('.featured-title__square', {
