@@ -65,7 +65,7 @@ const Home = () => {
                   style={{ "--tooltip-color": "#83A2FF" }}
                 />
                 <div className="ag-courses-item_title">
-                  /3d Modeling
+                  3d Modeling
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@ const Home = () => {
                   style={{ "--tooltip-color": "#B4BDFF" }}
                 />
                 <div className="ag-courses-item_title">
-                  /Animations
+                  Animations
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ const Home = () => {
                   style={{ "--tooltip-color": "#435585" }}
                 />
                 <div className="ag-courses-item_title">
-                  /Video Editing
+                  Video Editing
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@ const Home = () => {
                   style={{ "--tooltip-color": "#FFD28F" }}
                 />
                 <div className="ag-courses-item_title">
-                  /Graphic Designing
+                  Graphic Designing
                 </div>
               </div>
             </div>

@@ -44,8 +44,8 @@ const slider2 = [
 
 const Featured = () => {
 
-    const mediaQuery = window.matchMedia('(min-width: 801px)');
     const container = useRef(null);
+    const mediaQuery = window.matchMedia('(min-width: 801px)');
 
  
         const { scrollYProgress } = useScroll({

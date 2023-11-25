@@ -59,15 +59,15 @@ const Landing = () => {
                         <source src={video} type="video/mp4" />
                     </video>
                 </div>
-                <div className="hero-imges">
+                {/* <div className="hero-imges">
                     <img src={hero} alt="" />
-                </div>
-                <div className="container">
+                </div> */}
+                {/* <div className="container">
                     <div className="hero-content">
                         <div className="hero-banner">
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
         </>
     );

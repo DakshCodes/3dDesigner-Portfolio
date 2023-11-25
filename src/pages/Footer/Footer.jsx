@@ -15,6 +15,7 @@ export default function Footer() {
     const x = useTransform(scrollYProgress, [0, 1], [0, 100])
     const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
     const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
+
     return (
         <motion.div ref={container} className="contact">
             <div className="body mt-10">
@@ -43,7 +44,9 @@ export default function Footer() {
                     >together</motion.h2>
                     <motion.div style={{ x }} className="buttonContainer">
                         <Rounded backgroundColor={"red"} className="button">
-                            <p>Get in touch</p>
+                            <Link to={'/contact'}>
+                                <p>Get in touch</p>
+                            </Link>
                         </Rounded>
                     </motion.div>
                     <motion.svg

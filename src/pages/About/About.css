@@ -124,8 +124,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 23rem;
-    width: 23rem;
+    height: 30rem;
+    width: 30rem;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -174,7 +174,7 @@
     font-family: 'Abril Fatface', cursive;
     position: relative;
     /* for pseudos */
-    color: red;
+    color: #fff;
     font-size: 2.8rem;
     font-weight: normal;
     line-height: 1;

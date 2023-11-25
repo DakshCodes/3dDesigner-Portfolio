@@ -32,24 +32,25 @@
 .contact .body .title {
     border-bottom: 1px solid #868686;
     margin-left: 200px;
-    padding-bottom: 3.3rem;
+    padding-bottom: 1rem;
     margin-right: 200px;
     position: relative;
-    margin-bottom: 7rem;
+    margin-bottom: 6rem;
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    line-height: 0.1;
+    line-height:1;
 }
 
 .contact .body .title span {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .contact .body .title span .imageContainer {
-    width: 12vw;
-    height: 12vw;
+    width: 10vw;
+    height: 10vw;
     position: relative;
     border-radius: 50%;
     overflow: hidden;
@@ -64,10 +65,10 @@
 }
 
 .contact .body .title h2 {
-    font-size: 5vmax;
+    font-size: 4vmax;
     margin: 0px;
     font-weight: 300;
-    margin-left: 15rem;
+    text-align: center;
 }
 
 .contact .body .title .buttonContainer {
@@ -122,7 +123,7 @@
     padding: 20px 0px 20px 0px;
     height: 6vmax;
     width: 18vmax;
-    margin: 0 auto;
+    margin: 1rem auto;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
 }
 
@@ -221,7 +222,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 100px;
+        margin-top: 0px;
         padding: 40px;
         gap: 3rem ;
     }
@@ -242,7 +243,6 @@
 
 
     .contact .body .title span .imageContainer {
-        border: 1px solid red;
         width: 15vmax;
         height: 15vmax;
         position: relative;
