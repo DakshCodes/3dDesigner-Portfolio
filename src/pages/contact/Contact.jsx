@@ -67,7 +67,7 @@ const Contact = () => {
                   <span className='icon'><MdOutlineMessage size={20} /></span>
                   <textarea {...formik.getFieldProps('mailmessage')} cols="30" rows="10" placeholder='what is in your mind'></textarea>
                 </div>
-                <button className='btn1' type='submit'>Send Mail</button>
+                <button className='btn1' type='submit'>Submit</button>
 
               </form>
             </div>
