@@ -35,9 +35,7 @@ function messageVerify(error = {} , values){
     if (!values.mailmessage){
      error.mailmessage = toast.error('message required ....')
     }
-    else if (values.mailmessage.includes(" ")){
-     error.mailmessage = toast.error(' invalid message....')  
-    }
+  
 
 }
 
