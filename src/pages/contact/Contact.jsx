@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useFormik } from 'formik'
 import { Toaster, toast } from "react-hot-toast"
 import { registerValidate } from '../../validate';
@@ -7,8 +7,11 @@ import img from '../../assets/3dstudio.png'
 import model from '../../assets/3dman.png'
 import '../../App.css'
 import { MdEmail, MdPerson, MdWhatsapp, MdOutlineMessage } from 'react-icons/md';
+import { InfinitySpin } from 'react-loader-spinner';
 
 const Contact = () => {
+
+  const [loading, setLoading] = useState(false);
 
   const formik = useFormik({
     initialValues: {
@@ -21,8 +24,17 @@ const Contact = () => {
     validateOnBlur: false,
     validateOnChange: false,
     onSubmit: async values => {
-      RegisterUser(values)
-      toast.success('thanks for contacting me');
+      setLoading(true);
+      const response = await RegisterUser(values);
+      console.log(response)
+      if (response.success) {
+        setLoading(false);
+        toast.success(response.message);
+      } else {
+        setLoading(false);
+        toast.error(response.message);
+      }
+      setLoading(false);
       values.username = '';
       values.email = '';
       values.number = '';
@@ -37,6 +49,8 @@ const Contact = () => {
 
   return (
     <>
+
+
       <Toaster position="top-center" reverseorder={false}></Toaster>
       <div className="parent">
 
@@ -67,13 +81,20 @@ const Contact = () => {
                   <span className='icon'><MdOutlineMessage size={20} /></span>
                   <textarea {...formik.getFieldProps('mailmessage')} cols="30" rows="10" placeholder='what is in your mind'></textarea>
                 </div>
-                <button className='btn1' type='submit'>Submit</button>
+                {loading ? (
+                  <InfinitySpin
+                    width='200'
+                    color="red"
+                  />
+                ) : (
+                  <button className='btn1' type='submit'>Submit</button>
+                )}
 
               </form>
             </div>
           </div>
         </div>
-      </div>
+      </div >
 
     </>
   )

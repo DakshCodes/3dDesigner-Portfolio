@@ -5,9 +5,7 @@ import { Toaster, toast } from "react-hot-toast";
            if (!values.username){
             error.username = toast.error('username required ....')
            }
-           else if (values.username.includes(" ")){
-            error.username = toast.error('username invalid ....')  
-           }
+           
            return error;
 }
 
