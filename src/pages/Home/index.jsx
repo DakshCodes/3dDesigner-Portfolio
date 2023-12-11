@@ -56,7 +56,7 @@ const Landing = () => {
                         )}
                     </button>
                     <video autoPlay loop id="myVideo" ref={videoRef}>
-                        <source src={video} type="video/mp4" />
+                        <source src={"https://res.cloudinary.com/dazeowi1e/video/upload/v1702308854/Opeaning_1_mr5ktb.mp4"} type="video/mp4" />
                     </video>
                 </div>
                 {/* <div className="hero-imges">
