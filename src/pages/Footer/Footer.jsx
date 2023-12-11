@@ -89,7 +89,7 @@ export default function Footer() {
                             transition={{ duration: 0.4, delay: 0.2 }}
                         >
                             <h3>Developed & Designed by</h3>
-                            <Link to={"https://www.instagram.com/valuexlabs/"} target={"_blank"}>
+                            <Link to={"https://www.valuexlabs.in/"} target={"_blank"}>
                                 <p className='valuexlabs'>ValueXLabs</p>
                             </Link>
                         </motion.span>

@@ -71,7 +71,9 @@ const Home = () => {
             </div>
           </div>
           <div className="service-content">
-            <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
+            <div className='w-full'>
+            Experience the fusion of precision and creativity in my 3D modeling service. From lifelike characters to detailed environments, I use industry-standard software to craft accurate and visually stunning digital models that bring concepts to life.
+            </div>
           </div>
         </motion.div>
         <motion.div
@@ -92,7 +94,9 @@ const Home = () => {
             </div>
           </div>
           <div className="service-content">
-            <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
+            <div>
+            Dive into dynamic storytelling with my animation service. Whether it's character emotions or realistic motion, I use keyframe animation and rigging techniques to create immersive and captivating experiences, bringing static 3D models to life with fluid movement.
+            </div>
           </div>
         </motion.div>
         <motion.div
@@ -113,7 +117,9 @@ const Home = () => {
             </div>
           </div>
           <div className="service-content">
-            <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
+            <div>
+            Transform raw footage into polished narratives with my video editing expertise. Seamlessly combining visuals, effects, and audio, I create engaging videos for various purposes, enhancing storytelling with transitions, effects, and music to leave a lasting impact.
+            </div>
           </div>
         </motion.div>
         <motion.div
@@ -134,7 +140,9 @@ const Home = () => {
             </div>
           </div>
           <div className="service-content">
-            <div>UI/Web&amp;Graph design for teenagers 11-17&nbsp;years oldr</div>
+            <div>
+            Shape your brand identity with my graphic designing service. From eye-catching logos to cohesive branding, I specialize in visually appealing graphics that communicate effectively. My designs fuse creativity with design principles to elevate your brand aesthetics online and offline.
+            </div>
           </div>
         </motion.div>
       </div>
