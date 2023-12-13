@@ -30,7 +30,7 @@ const WorkItem = ({ videoSource, number, componentspeed, numberspeed }) => {
         >
             <motion.div className="work__item-img">
                 <motion.span className="work__item-num" data-speed={numberspeed}>{number}</motion.span>
-                <motion.video loop muted preload="auto" ref={videoRef} id="project-video">
+                <motion.video loop  preload="auto" ref={videoRef} id="project-video">
                     <source src={videoSource} type="video/mp4" />
                 </motion.video>
             </motion.div>
@@ -95,19 +95,19 @@ const Works = () => {
         // < !--div.work -- >
         <section className="work">
             <div className="content">
-                <h2 className="work-title">portfo<span className="work-stroke">lio</span>
+                <h2 className="work-title">portfo<span className="work-stroke">lios</span>
                     <span className="work-title__square" />
                 </h2>
             </div>
             <div className="work__wrapp"
                 ref={workWrapper}
             >
-                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/expMp4/11/57/38/1157385f7a7d8152cf14bbfb4fb093ec_t3.mp4" numberspeed={-400} componentspeed={-100} number={"Modeling King"} />
-                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/expMp4/3f/b4/e4/3fb4e41e0e27e4146b87398cee8719c9_t3.mp4" numberspeed={-500} componentspeed={900} number={"Trphy Juice"} />
-                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/720p/c1/32/0c/c1320cf3edba286632c6810b09ad3de5.mp4" numberspeed={-400} componentspeed={200} number={"Greatness"} />
-                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/720p/95/92/71/959271eceee104db73c0930ab3a7135a.mp4" numberspeed={-250} componentspeed={930} number={"Extro"} />
-                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/expMp4/e9/3c/1c/e93c1cc844923d7c3d8c0e5c6625d9f0_t3.mp4" numberspeed={-50} componentspeed={300} number={"005"} />
-                <WorkItem videoSource="https://v1.pinimg.com/videos/mc/720p/22/28/92/22289235b3d1f7b54bd04ff99d21b0b3.mp4" numberspeed={-150} componentspeed={900} number={"006"} />
+                <WorkItem videoSource="https://res.cloudinary.com/dazeowi1e/video/upload/v1702453215/Airpods_render_bgwpqv.mp4" numberspeed={-0} componentspeed={-100} number={"01"} />
+                <WorkItem videoSource="https://res.cloudinary.com/dazeowi1e/video/upload/v1702453128/CUP0001_1_ue31ty.mp4" numberspeed={0} componentspeed={400} number={"02"} />
+                <WorkItem videoSource="https://res.cloudinary.com/dazeowi1e/video/upload/v1702453261/juice_animation_qt3bei.mov" numberspeed={0} componentspeed={200} number={"03"} />
+                <WorkItem videoSource="https://res.cloudinary.com/dazeowi1e/video/upload/v1702453264/nuclear_room_yahxut.mp4" numberspeed={0} componentspeed={930} number={"04"} />
+                <WorkItem videoSource="https://res.cloudinary.com/dazeowi1e/video/upload/v1702453212/t_shhirt_mockup_onhfxc.mp4" numberspeed={0} componentspeed={300} number={"05"} />
+                <WorkItem videoSource="https://res.cloudinary.com/dazeowi1e/video/upload/v1702453274/finel_output_with_sound_ni8rzb.mp4" numberspeed={0} componentspeed={900} number={"06"} />
             </div>
         </section>
 

@@ -21,7 +21,7 @@
     height: max-content;
     display: flex;
     justify-content: space-around;
-    row-gap: 600px;
+    row-gap: 300px;
     /* flex-direction: column; */
     flex-wrap: wrap;
 }
@@ -65,7 +65,7 @@
 .work__item-num {
     position: absolute;
     display: inline-block;
-    font-size: 5vmax;
+    font-size: 5.5vmax;
     width: 100%;
     color: var(--pr-color);
     /* color: #fff; */
@@ -97,7 +97,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
 

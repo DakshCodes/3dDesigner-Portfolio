@@ -15,30 +15,30 @@ import { Link } from 'react-router-dom';
 const slider1 = [
     {
         color: "#e3e5e7",
-        src: img1
+        src: "https://res.cloudinary.com/dazeowi1e/image/upload/v1702453111/Night_Render_ap1chi.png",
     },
     {
         color: "#d6d7dc",
-        src: img2,
+        src: "https://res.cloudinary.com/dylnk52kz/image/upload/v1702472072/Screenshot_2023-12-13_182311_fhzdf6.png"
     },
     {
         color: "#d6d7dc",
-        src: img4,
+        src: "https://res.cloudinary.com/dazeowi1e/image/upload/v1702453194/0341_x7jlyo.png"
     },
 ];
 
 const slider2 = [
     {
         color: "#d4e3ec",
-        src: img4
+        src: "https://res.cloudinary.com/dylnk52kz/image/upload/v1702472210/Screenshot_2023-12-13_182622_bgs3zd.png",
     },
     {
         color: "#e5e0e1",
-        src: img3,
+        src: "https://res.cloudinary.com/dylnk52kz/image/upload/v1702472077/Screenshot_2023-12-13_182039_m2yngs.png"
     },
     {
         color: "#d7d4cf",
-        src: img2,
+        src: "https://res.cloudinary.com/dylnk52kz/image/upload/v1702472607/Day_render_g7tjtc.jpg",
     }
 ];
 
@@ -53,8 +53,8 @@ const Featured = () => {
             offset: ["start end", "end start"]
         })
 
-    const x1 =   mediaQuery.matches && useTransform(scrollYProgress, [0, 1], [0, 200])
-    const x2 =   mediaQuery.matches && useTransform(scrollYProgress, [0, 1], [0, -200])
+    const x1 =   mediaQuery.matches && useTransform(scrollYProgress, [0, 1], [0, 250])
+    const x2 =   mediaQuery.matches && useTransform(scrollYProgress, [0, 1], [0, -250])
     const height =   mediaQuery.matches && useTransform(scrollYProgress, [0, 0.9], [200, 0])
 
 
@@ -88,8 +88,9 @@ const Featured = () => {
                                 <motion.img
                                     initial={{ height: "-100%" }}
                                     whileInView={{ height: "100%", }}
-                                    transition={{ duration: 0.7, ease: 'circOut' }}
+                                    transition={{ duration: 0.9, ease: 'circOut' }}
                                     fill={true}
+                                    viewport={{once:true}}
                                     alt={"image"}
                                     src={project.src} />
                             </div>
@@ -106,6 +107,7 @@ const Featured = () => {
                                     initial={{ height: "-100%" }}
                                     whileInView={{ height: "100%", }}
                                     transition={{ duration: 0.7, ease: 'circOut' }}
+                                    viewport={{once:true}}
                                     fill={true}
                                     alt={"image"}
                                     src={project.src} />
