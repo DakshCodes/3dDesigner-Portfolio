@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './About.css'
+import footer from '../../assets/ankit.jpg'
 
 const About = () => {
 
@@ -14,7 +15,7 @@ const About = () => {
                     <div className="img-bg-1"></div>
                     <div className="img-bg-2"></div>
                     <div className="profile-img">
-                        <img src="https://i.pinimg.com/564x/31/ca/cf/31cacfc8bceb2011c2f23ea32d2fbfa1.jpg" alt="" />
+                        <img src={footer} alt="" />
                     </div>
                 </div>
             </div>

@@ -29,18 +29,21 @@ export default function Footer() {
                                 fill={true}
                                 alt={"image"}
                                 src={footer}
+                                viewport={{once:true}}
                             />
                         </div>
                         <motion.h2
                             initial={{ opacity: 0, x: -40 }}
                             whileInView={{ opacity: 1, x: 0, }}
                             transition={{ duration: 0.4, delay: 0.2 }}
+                            viewport={{once:true}}
                         >Let's work</motion.h2>
                     </span>
                     <motion.h2
                         initial={{ opacity: 0, x: -40 }}
                         whileInView={{ opacity: 1, x: 0, }}
                         transition={{ duration: 0.4, delay: 0.2 }}
+                        viewport={{once:true}}
                     >together</motion.h2>
                     <motion.div style={{ x }} className="buttonContainer">
                         <Link to={'/contact'}>
@@ -53,6 +56,7 @@ export default function Footer() {
                         initial={{ opacity: 0, x: -40 }}
                         whileInView={{ opacity: 1, x: 0, }}
                         transition={{ duration: 0.4, delay: 0.2 }}
+                        viewport={{once:true}}
                         style={{ rotate, scale: 2 }} width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 8.5C8.27614 8.5 8.5 8.27614 8.5 8L8.5 3.5C8.5 3.22386 8.27614 3 8 3C7.72386 3 7.5 3.22386 7.5 3.5V7.5H3.5C3.22386 7.5 3 7.72386 3 8C3 8.27614 3.22386 8.5 3.5 8.5L8 8.5ZM0.646447 1.35355L7.64645 8.35355L8.35355 7.64645L1.35355 0.646447L0.646447 1.35355Z" fill="white" />
                     </motion.svg>
@@ -62,6 +66,7 @@ export default function Footer() {
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0, }}
                         transition={{ duration: 0.4, delay: 0.2 }}
+                        viewport={{once:true}}
                         className='roundedButton-1'>
                         <p>itx3dstudio@gmail.com</p>
                     </motion.div>
@@ -69,6 +74,7 @@ export default function Footer() {
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0, }}
                         transition={{ duration: 0.4, delay: 0.2 }}
+                        viewport={{once:true}}
                         className='roundedButton-1'>
                         <p>94600 09410</p>
                     </motion.div>
@@ -79,6 +85,7 @@ export default function Footer() {
                             initial={{ opacity: 0, x: -40 }}
                             whileInView={{ opacity: 1, x: 0, }}
                             transition={{ duration: 0.4, delay: 0.2 }}
+                            viewport={{once:true}}
                         >
                             <h3>Version</h3>
                             <p>2023 © Edition</p>
@@ -87,6 +94,7 @@ export default function Footer() {
                             initial={{ opacity: 0, x: -40 }}
                             whileInView={{ opacity: 1, x: 0, }}
                             transition={{ duration: 0.4, delay: 0.2 }}
+                            viewport={{once:true}}
                         >
                             <h3>Developed & Designed by</h3>
                             <Link to={"https://www.valuexlabs.in/"} target={"_blank"}>
@@ -99,11 +107,13 @@ export default function Footer() {
                             initial={{ opacity: 0, x: -40 }}
                             whileInView={{ opacity: 1, x: 0, }}
                             transition={{ duration: 0.4, delay: 0.2 }}
+                            viewport={{once:true}}
                         >
                             <motion.h3
                                 initial={{ opacity: 0, x: -40 }}
                                 whileInView={{ opacity: 1, x: 0, }}
                                 transition={{ duration: 0.4, delay: 0.2 }}
+                                viewport={{once:true}}
                             >Socials</motion.h3>
                         </motion.span>
                         <Magnetic>

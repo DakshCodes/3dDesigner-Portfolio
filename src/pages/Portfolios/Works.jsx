@@ -102,10 +102,10 @@ const Works = () => {
             <div className="work__wrapp"
                 ref={workWrapper}
             >
-                <WorkItem videoSource="https://res.cloudinary.com/dazeowi1e/video/upload/v1702453215/Airpods_render_bgwpqv.mp4" numberspeed={-0} componentspeed={-100} number={"01"} />
+                <WorkItem videoSource="https://res.cloudinary.com/dylnk52kz/video/upload/v1702478650/Airpods_render_1__1_rfpsg4.mp4" numberspeed={-0} componentspeed={-100} number={"01"} />
                 <WorkItem videoSource="https://res.cloudinary.com/dazeowi1e/video/upload/v1702453128/CUP0001_1_ue31ty.mp4" numberspeed={0} componentspeed={400} number={"02"} />
-                <WorkItem videoSource="https://res.cloudinary.com/dazeowi1e/video/upload/v1702453261/juice_animation_qt3bei.mov" numberspeed={0} componentspeed={200} number={"03"} />
-                <WorkItem videoSource="https://res.cloudinary.com/dazeowi1e/video/upload/v1702453264/nuclear_room_yahxut.mp4" numberspeed={0} componentspeed={930} number={"04"} />
+                <WorkItem videoSource="https://res.cloudinary.com/dylnk52kz/video/upload/v1702478643/Airpods_render_1_cur5xr.mp4" numberspeed={0} componentspeed={200} number={"03"} />
+                <WorkItem videoSource="https://res.cloudinary.com/dylnk52kz/video/upload/v1702478660/Airpods_render_1__2_tj3jff.mp4" numberspeed={0} componentspeed={930} number={"04"} />
                 <WorkItem videoSource="https://res.cloudinary.com/dazeowi1e/video/upload/v1702453212/t_shhirt_mockup_onhfxc.mp4" numberspeed={0} componentspeed={300} number={"05"} />
                 <WorkItem videoSource="https://res.cloudinary.com/dazeowi1e/video/upload/v1702453274/finel_output_with_sound_ni8rzb.mp4" numberspeed={0} componentspeed={900} number={"06"} />
             </div>
